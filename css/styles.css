@@ -1,5 +1,5 @@
 body {
-    background-color: #0c0c0c;
+    background-color: #1F2224;
     color: white;
   }
   
@@ -22,5 +22,17 @@ body {
     height: 400px;         /* Tamaño uniforme para todas las imágenes */
     object-fit: cover;     /* Recorta sin deformar */
     width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    .pelicula-img {
+      height: 250px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .pelicula-img {
+      height: 200px;
+    }
   }
   

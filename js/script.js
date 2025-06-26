@@ -2,17 +2,17 @@ $(document).ready(function() {
     const peliculas = [
       { titulo: "Oppenheimer", imagen: "assets/img/oppenheimer1.png" },
       { titulo: "Dune", imagen: "assets/img/Dune2.png" },
-      { titulo: "Horizonte Final", imagen: "assets/img/persepolis.png" }
+      { titulo: "Persepolis", imagen: "assets/img/persepolis.png" }
     ];
   
     // Cargar galería
     peliculas.forEach((p, i) => {
         $("#galeria").append(`
-          <div class="col-md-4 mb-4">
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
             <div class="card h-100">
               <img src="${p.imagen}" class="card-img-top img-fluid pelicula-img" alt="${p.titulo}">
               <div class="card-body d-flex flex-column justify-content-between">
-                <h5 class="card-title">${p.titulo}</h5>
+                <h5 class=" card text-center card-title">${p.titulo}</h5>
                 <button class="btn btn-primary reservar-btn mt-3" data-index="${i}">Reservar</button>
               </div>
             </div>
